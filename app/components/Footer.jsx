@@ -1,4 +1,3 @@
-cat > app/components/Footer.jsx << 'ENDOFFILE'
 'use client'
 
 export default function Footer() {
@@ -37,4 +36,3 @@ export default function Footer() {
     </footer>
   )
 }
-ENDOFFILE

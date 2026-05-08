@@ -1,4 +1,3 @@
-cat > app/components/Skills.jsx << 'EOF'
 'use client'
 
 export default function Skills() {
@@ -71,4 +70,3 @@ export default function Skills() {
     </section>
   )
 }
-EOF

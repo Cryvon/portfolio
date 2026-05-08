@@ -1,4 +1,3 @@
-cat > app/components/Navbar.jsx << 'EOF'
 'use client'
 import { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
@@ -35,4 +34,3 @@ export default function Navbar() {
     </nav>
   )
 }
-EOF

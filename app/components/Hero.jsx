@@ -1,4 +1,3 @@
-cat > app/components/Hero.jsx << 'EOF'
 export default function Hero() {
   return (
     <section id="home" style={{
@@ -35,4 +34,3 @@ export default function Hero() {
     </section>
   )
 }
-EOF

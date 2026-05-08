@@ -1,4 +1,3 @@
-cat > app/components/Experience.jsx << 'EOF'
 'use client'
 
 export default function Experience() {
@@ -49,4 +48,3 @@ export default function Experience() {
     </section>
   )
 }
-EOF

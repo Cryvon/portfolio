@@ -1,4 +1,3 @@
-cat > app/components/About.jsx << 'EOF'
 export default function About() {
   return (
     <section id="about" style={{ background: 'white' }}>
@@ -56,4 +55,3 @@ export default function About() {
     </section>
   )
 }
-EOF

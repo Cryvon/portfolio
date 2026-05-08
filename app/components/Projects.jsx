@@ -1,4 +1,3 @@
-cat > app/components/Projects.jsx << 'EOF'
 'use client'
 
 export default function Projects() {
@@ -75,4 +74,3 @@ export default function Projects() {
     </section>
   )
 }
-EOF
