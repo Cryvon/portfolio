@@ -1,4 +1,6 @@
+cat > app/components/Footer.jsx << 'ENDOFFILE'
 'use client'
+
 export default function Footer() {
   return (
     <footer style={{
@@ -9,26 +11,30 @@ export default function Footer() {
     }}>
       <div className="container">
         <p style={{ color: 'var(--gray)', fontSize: '0.95rem' }}>
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Abdulaziz Zuhriddinov. All rights reserved.
         </p>
         <div style={{ marginTop: '15px', display: 'flex', gap: '25px', justifyContent: 'center' }}>
-          <a href="#" style={{ color: 'var(--gray)', textDecoration: 'none', transition: 'color 0.3s' }}
-             onMouseEnter={e => e.target.style.color = 'white'}
-             onMouseLeave={e => e.target.style.color = 'var(--gray)'}>
-            LinkedIn
-          </a>
-          <a href="#" style={{ color: 'var(--gray)', textDecoration: 'none', transition: 'color 0.3s' }}
+          <a href="https://github.com/Cryvon" target="_blank" rel="noopener noreferrer" 
+             style={{ color: 'var(--gray)', textDecoration: 'none', transition: 'color 0.3s' }}
              onMouseEnter={e => e.target.style.color = 'white'}
              onMouseLeave={e => e.target.style.color = 'var(--gray)'}>
             GitHub
           </a>
-          <a href="#" style={{ color: 'var(--gray)', textDecoration: 'none', transition: 'color 0.3s' }}
+          <a href="https://t.me/zuhriddinov055" target="_blank" rel="noopener noreferrer" 
+             style={{ color: 'var(--gray)', textDecoration: 'none', transition: 'color 0.3s' }}
              onMouseEnter={e => e.target.style.color = 'white'}
              onMouseLeave={e => e.target.style.color = 'var(--gray)'}>
-            Twitter
+            Telegram
+          </a>
+          <a href="mailto:abdulazizzuhriddinov055@gmail.com" 
+             style={{ color: 'var(--gray)', textDecoration: 'none', transition: 'color 0.3s' }}
+             onMouseEnter={e => e.target.style.color = 'white'}
+             onMouseLeave={e => e.target.style.color = 'var(--gray)'}>
+            Email
           </a>
         </div>
       </div>
     </footer>
   )
 }
+ENDOFFILE

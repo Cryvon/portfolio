@@ -1,30 +1,20 @@
+cat > app/components/Experience.jsx << 'EOF'
 'use client'
+
 export default function Experience() {
   const experiences = [
     {
-      role: 'Senior Software Engineer',
-      company: 'Tech Corp Inc.',
-      period: '2022 - Present',
-      description: 'Lead a team of 5 engineers, architecting and implementing microservices that handle 1M+ requests daily. Reduced infrastructure costs by 40%.'
-    },
-    {
-      role: 'Full Stack Developer',
-      company: 'Digital Solutions Ltd.',
-      period: '2020 - 2022',
-      description: 'Built and maintained multiple client-facing applications using React and Node.js. Improved application performance by 60%.'
-    },
-    {
-      role: 'Junior Developer',
-      company: 'StartUp Hub',
-      period: '2018 - 2020',
-      description: 'Developed features for the companys SaaS platform. Collaborated with design and product teams to deliver quarterly roadmap items.'
+      role: 'Programming Student',
+      company: 'PDP School',
+      period: '2025 - Present',
+      description: 'Learning full-stack development with focus on backend technologies. Building projects using Java, React, HTML, CSS, and JavaScript. Developing real-world applications while completing 9th grade studies.'
     },
   ]
 
   return (
     <section id="experience" style={{ background: 'var(--light)' }}>
       <div className="container">
-        <h2 className="section-title">Professional Experience</h2>
+        <h2 className="section-title">Experience</h2>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           {experiences.map((exp, index) => (
             <div key={index} style={{
@@ -59,3 +49,4 @@ export default function Experience() {
     </section>
   )
 }
+EOF

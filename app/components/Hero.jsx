@@ -1,3 +1,4 @@
+cat > app/components/Hero.jsx << 'EOF'
 export default function Hero() {
   return (
     <section id="home" style={{
@@ -14,14 +15,14 @@ export default function Hero() {
             Hello, I'm
           </p>
           <h1 style={{ fontSize: '3.8rem', fontWeight: 800, marginBottom: '20px', lineHeight: 1.2 }}>
-            Your Full Name
+            Abdulaziz Zuhriddinov
           </h1>
           <h2 style={{ fontSize: '1.8rem', fontWeight: 400, color: '#94a3b8', marginBottom: '25px' }}>
-            Senior Software Engineer & Tech Lead
+            Backend Developer
           </h2>
           <p style={{ fontSize: '1.15rem', color: '#cbd5e1', marginBottom: '40px', lineHeight: 1.8, maxWidth: '550px' }}>
-            Building scalable solutions with 8+ years of experience in full-stack development. 
-            Passionate about clean architecture and delivering business value through technology.
+            15-year-old developer passionate about building useful applications. 
+            Currently studying at PDP School while creating real-world projects.
           </p>
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
             <a href="#contact" className="btn btn-primary">Get In Touch</a>
@@ -34,3 +35,4 @@ export default function Hero() {
     </section>
   )
 }
+EOF

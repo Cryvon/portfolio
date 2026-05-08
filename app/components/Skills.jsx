@@ -1,24 +1,26 @@
+cat > app/components/Skills.jsx << 'EOF'
 'use client'
+
 export default function Skills() {
   const skillCategories = [
     {
       title: 'Frontend',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Redux', 'Vue.js']
+      skills: ['HTML', 'CSS', 'JavaScript', 'React']
     },
     {
       title: 'Backend',
-      skills: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'GraphQL', 'REST APIs']
+      skills: ['Java', 'Node.js']
     },
     {
-      title: 'DevOps & Tools',
-      skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Git', 'Linux']
+      title: 'Currently Learning',
+      skills: ['Next.js', 'Databases', 'APIs']
     },
   ]
 
   return (
     <section id="skills" style={{ background: 'white' }}>
       <div className="container">
-        <h2 className="section-title">Skills & Expertise</h2>
+        <h2 className="section-title">Skills & Technologies</h2>
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -69,3 +71,4 @@ export default function Skills() {
     </section>
   )
 }
+EOF

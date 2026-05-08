@@ -1,5 +1,4 @@
-import Image from 'next/image'
-
+cat > app/components/About.jsx << 'EOF'
 export default function About() {
   return (
     <section id="about" style={{ background: 'white' }}>
@@ -25,29 +24,30 @@ export default function About() {
           </div>
           <div>
             <h3 style={{ fontSize: '1.8rem', marginBottom: '20px', color: 'var(--dark)' }}>
-              A dedicated professional with a passion for excellence
+              Young developer with big ambitions
             </h3>
             <p style={{ color: 'var(--secondary)', marginBottom: '20px', lineHeight: 1.8, fontSize: '1.05rem' }}>
-              With over 8 years in the tech industry, I've led teams and built products 
-              that serve millions of users. My approach combines strategic thinking with 
-              hands-on technical expertise to deliver results that matter.
+              I'm Abdulaziz, a 15-year-old backend developer from Uzbekistan. 
+              I'm currently in 9th grade at PDP School, where I'm learning programming 
+              and building real projects.
             </p>
             <p style={{ color: 'var(--secondary)', marginBottom: '30px', lineHeight: 1.8, fontSize: '1.05rem' }}>
-              When I'm not coding, you'll find me mentoring junior developers, 
-              contributing to open-source projects, or staying updated with the latest tech trends.
+              Even though I've only been coding for 6 months, I've already built working applications 
+              using React, Java, HTML, CSS, and JavaScript. I love solving problems and 
+              learning new technologies every day.
             </p>
             <div style={{ display: 'flex', gap: '40px' }}>
               <div>
-                <h4 style={{ fontSize: '2rem', color: 'var(--primary)', fontWeight: 700 }}>50+</h4>
-                <p style={{ color: 'var(--secondary)' }}>Projects Delivered</p>
+                <h4 style={{ fontSize: '2rem', color: 'var(--primary)', fontWeight: 700 }}>6</h4>
+                <p style={{ color: 'var(--secondary)' }}>Months Coding</p>
               </div>
               <div>
-                <h4 style={{ fontSize: '2rem', color: 'var(--primary)', fontWeight: 700 }}>30+</h4>
-                <p style={{ color: 'var(--secondary)' }}>Happy Clients</p>
+                <h4 style={{ fontSize: '2rem', color: 'var(--primary)', fontWeight: 700 }}>15</h4>
+                <p style={{ color: 'var(--secondary)' }}>Years Old</p>
               </div>
               <div>
-                <h4 style={{ fontSize: '2rem', color: 'var(--primary)', fontWeight: 700 }}>8+</h4>
-                <p style={{ color: 'var(--secondary)' }}>Years Exp</p>
+                <h4 style={{ fontSize: '2rem', color: 'var(--primary)', fontWeight: 700 }}>9th</h4>
+                <p style={{ color: 'var(--secondary)' }}>Grade</p>
               </div>
             </div>
           </div>
@@ -56,3 +56,4 @@ export default function About() {
     </section>
   )
 }
+EOF

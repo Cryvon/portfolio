@@ -1,3 +1,4 @@
+cat > app/components/Navbar.jsx << 'EOF'
 'use client'
 import { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
@@ -17,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <a href="#" className={styles.logo}>YourName<span>.</span></a>
+        <a href="#" className={styles.logo}>Abdulaziz<span>.</span></a>
         
         <div className={`${styles.navLinks} ${mobileOpen ? styles.active : ''}`}>
           {navLinks.map(link => (
@@ -34,3 +35,4 @@ export default function Navbar() {
     </nav>
   )
 }
+EOF

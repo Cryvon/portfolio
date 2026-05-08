@@ -1,3 +1,4 @@
+cat > app/components/Contact.jsx << 'ENDOFFILE'
 'use client'
 import { useState } from 'react'
 
@@ -6,9 +7,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Add your form submission logic here
-    alert('Message sent! (Demo)')
-    setForm({ name: '', email: '', message: '' })
+    window.location.href = 'mailto:abdulazizzuhriddinov055@gmail.com?subject=Portfolio Contact from ' + form.name + '&body=' + form.message + '%0D%0A%0D%0AFrom: ' + form.email
   }
 
   return (
@@ -24,7 +23,11 @@ export default function Contact() {
           border: '1px solid var(--border)'
         }}>
           <p style={{ textAlign: 'center', color: 'var(--secondary)', marginBottom: '35px', fontSize: '1.05rem' }}>
-            Have a project in mind? Let's work together to make it happen.
+            Have a project in mind? Let&apos;s work together to make it happen.
+          </p>
+          <p style={{ textAlign: 'center', marginBottom: '25px' }}>
+            Email: abdulazizzuhriddinov055@gmail.com<br/>
+            Telegram: @zuhriddinov055
           </p>
           <form onSubmit={handleSubmit}>
             <div style={{ marginBottom: '20px' }}>
@@ -46,7 +49,7 @@ export default function Contact() {
                   transition: 'border-color 0.3s',
                   fontFamily: 'inherit'
                 }}
-                placeholder="John Doe"
+                placeholder="Your name"
                 onFocus={e => e.target.style.borderColor = 'var(--primary)'}
                 onBlur={e => e.target.style.borderColor = 'var(--border)'}
               />
@@ -69,7 +72,7 @@ export default function Contact() {
                   outline: 'none',
                   fontFamily: 'inherit'
                 }}
-                placeholder="john@example.com"
+                placeholder="your@email.com"
                 onFocus={e => e.target.style.borderColor = 'var(--primary)'}
                 onBlur={e => e.target.style.borderColor = 'var(--border)'}
               />
@@ -107,3 +110,4 @@ export default function Contact() {
     </section>
   )
 }
+ENDOFFILE

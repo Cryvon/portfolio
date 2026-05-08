@@ -1,30 +1,20 @@
+cat > app/components/Projects.jsx << 'EOF'
 'use client'
+
 export default function Projects() {
   const projects = [
     {
-      title: 'Enterprise Dashboard',
-      description: 'Real-time analytics dashboard serving 10K+ users with interactive charts and data filtering.',
-      tech: ['React', 'D3.js', 'Node.js', 'WebSocket'],
+      title: 'Customer Control',
+      description: 'A customer management app where you can select a time slot and view customer details like name, phone number, and Telegram username.',
+      tech: ['React', 'Java', 'HTML', 'CSS', 'JavaScript'],
       color: '#2563eb'
-    },
-    {
-      title: 'E-Commerce Platform',
-      description: 'Full-featured marketplace with payment integration, inventory management, and admin panel.',
-      tech: ['Next.js', 'Stripe', 'PostgreSQL', 'AWS'],
-      color: '#7c3aed'
-    },
-    {
-      title: 'AI Chat Application',
-      description: 'Customer support chatbot powered by GPT, reducing response time by 70%.',
-      tech: ['Python', 'FastAPI', 'OpenAI', 'Redis'],
-      color: '#059669'
     },
   ]
 
   return (
     <section id="projects" style={{ background: 'var(--light)' }}>
       <div className="container">
-        <h2 className="section-title">Featured Projects</h2>
+        <h2 className="section-title">My Projects</h2>
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
@@ -85,3 +75,4 @@ export default function Projects() {
     </section>
   )
 }
+EOF
